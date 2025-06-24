@@ -19,9 +19,9 @@
         <h1>Vanguard</h1>
             <h2>Main Navigation</h2>
             <ul>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
     </header>
     <main>
@@ -56,32 +56,40 @@
                 <h2>Proven Results</h2>
                 <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
 
-                    <h3>Profits</h3>
-                    Year
-                    Revenue ($M)
-                    Growth (%)
-
-                    2020
-                    $120M
-                    30%
-
-                    2021
-                    $180M
-                    50%
-
-                    2022
-                    $250M
-                    70%
-
-                    2023
-                    $340M
-                    85%
-
-                    2024
-                    $420M
-                    100%
-
-                    <h3>Growth</h3>
+                <h3>Profits</h3>
+                 <table>
+                    <tr>
+                        <th>Year</th> 
+                        <th>Revenue ($M)</th> 
+                        <th>Growth (%)</th> 
+                    </tr>
+                    <tr>
+                        <td>2020</td> 
+                        <td>$120M</td>
+                        <td>30%</td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>$180M</td>
+                        <td>50%</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>$250M</td>
+                        <td>70%</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>$340M</td>
+                        <td>85%</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>$420M</td>
+                        <td>100%</td>
+                    </tr>
+                </table>
+                <h3>Growth</h3>
     <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
                         <div  id="bar-chart">
                             <div class="bar" data-year="2020" style="--height: 30%;"></div>
@@ -91,23 +99,30 @@
                             <div class="bar" data-year="2024" style="--height: 100%;"></div>
                         </div>
     </main>
-    <footer>                
-        <h2>Contact Us</h2>
-        <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
+    <footer>
+        <section id="contact">                
+            <h2>Contact Us</h2>
+            <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
 
-            Full Name
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="name" required> 
 
-            Email Address
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" required> 
 
-            Company Name
+                <label for="company-name">Company Name</label> 
+                <input type="text" name="company-name" id="company-name" required>
 
-            Industry
+                <label for="industry">Industry</label>
+                <input type="text" name="industry" id="industry" required>
 
-            How can we help you?
-
-            Submit
-
+                <label for="help-needed">How can we help you?</label> 
+                <textarea name="help-needed" id="help-needed"></textarea>
+                
+                <input type="submit" name="submit" id="submit" value="Submit"> 
+        </section>
         <p>2025 Vanguard. All rights reserved.</p> 
+        <p>Email: <a href="mailto:info@vanguard.com">info@vanguard.com</a></p>
         <p>Phone: 480.123.4567</p>
     </footer>
 </body>
