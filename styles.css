@@ -153,13 +153,13 @@ label span:before {
 label span:after {
     top: -.75rem;
 }
-input {
+#menu-toggle {
     display: none;
 }
-input:checked ~ ul {
+#menu-toggle:checked ~ ul {
     max-height: 500px;
 }
-input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+#menu-toggle:checked ~ #menu-toggle label:not(.steps) span:before, #menu-toggle:checked ~ #menu-toggle label:not(.steps) span:after {
     top: 0;
 }
 #innovation h2, #innovation p, #innovation a {
@@ -198,7 +198,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 #expertise h2 {
     margin-top: 15px;
 }
-#expertise p, #results p, #contact p {
+#expertise p, #results p {
     padding: 5px 10px;
     line-height: 22px;
     margin-left: 5px;
@@ -257,7 +257,62 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background-color: var(--charcoal);
 }
+#growth {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer {
+    color: var(--white);
+}
+#contact h2 {
+    padding-top: 20px;
+}
+label {
+    display: block;
+    color: var(--white);
+    padding-top: 15px;
+}
+input[ type=text ], input[ type=email ], textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border: 2px solid var(--blue);
+    margin-right: auto;
+    margin-left: auto;
+} 
+textarea {
+    height: 100px;
+    margin-bottom: 20px;
+}
 
+#submit {
+    width: 100%;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: var(--blue);
+    padding: 15px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form {
+    background-color: var(--black);
+    padding: 10px;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#contact > p {
+    padding: 5px 10px;
+    line-height: 22px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
@@ -279,8 +334,8 @@ tr:nth-child(odd) {
 } 
 
 
-/* ADD FLOATING SVG LOGO BEFORE THE H1 
- {
+/* ADD FLOATING SVG LOGO BEFORE THE H1*/
+svg {
     content: "";
 
     left:-.5rem;
@@ -289,7 +344,6 @@ tr:nth-child(odd) {
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
 
 }
-*/
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
