@@ -90,8 +90,9 @@ header {
 h1 {
     font-size: 2em;
     font-weight: bold;
+    padding-left: 45px;
 }
-h2{
+h2 {
     font-size: 2em;
     font-weight: bold;
     padding: 10px 25px;
@@ -110,7 +111,7 @@ nav ul {
 nav h2 {
     visibility: hidden;
     height: 1px;
- }
+}
 nav li a {
     float: block;
     padding: 15px 18px;
@@ -119,7 +120,7 @@ nav li a {
     text-decoration: none;
     color: var(--blue);
     transition: background-color color .3s ease-in;
-    line-height: 30px;
+    line-height: 50px;
 }
 nav a:hover, nav input:hover {
     background-color: var(--blue);
@@ -138,6 +139,7 @@ label span {
     position: relative;
     transition: background-color .3s ease-out;
     width: 2rem;
+    margin-left: 150px;
 }
 label span:before, label span:after {
     background: var(--white);
@@ -340,12 +342,26 @@ form {
 /* ADD FLOATING SVG LOGO BEFORE THE H1*/
 svg {
     content: "";
-
+    position: absolute;
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
-
+    animation-name: logo-float;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes logo-float {
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(0,5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
@@ -366,7 +382,7 @@ svg {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
@@ -410,8 +426,17 @@ svg {
     .bar-chart {
         width: 50%;
     } 
-}
-    
-
+    nav ul {
+        overflow: visible;
+        position: absolute;
+        top: 1.5rem;
+        left: .5rem;
+    }
+    nav li a {
+        display: inline-block;
+    }
+   label > span, #menu-toggle input {
+        display: none;
+    }
 
 /* MEDIA QUERIES (LARGE) */
