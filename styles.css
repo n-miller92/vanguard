@@ -286,7 +286,6 @@ textarea {
     height: 100px;
     margin-bottom: 20px;
 }
-
 #submit {
     width: 100%;
     color: var(--white);
@@ -302,16 +301,21 @@ textarea {
 form {
     background-color: var(--black);
     padding: 10px;
-    width: 85%;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
 }
 #contact > p {
     padding: 5px 10px;
     line-height: 22px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 5px;
+}
+#info {
+    padding: 20px;
+    text-align: center;
+    line-height: 25px;
 }
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
@@ -332,7 +336,6 @@ form {
     position: relative;
     z-index: 1;
 } 
-
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1*/
 svg {
