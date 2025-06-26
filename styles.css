@@ -67,6 +67,7 @@ table {
 body {
     min-width: 400px;
     font-family: "Inter";
+    overflow-x: hidden;
 }
 header, footer {
     background-color: var(--black);
@@ -80,7 +81,9 @@ header {
     gap: 5px;
     align-items: center;
     padding: 15px;
-    box-shadow: 0 0 4px var(--blue), 0 0 30px var(--blue), 0 0 8px var(--blue); 
+    box-shadow: 0 0 4px var(--blue), 0 0 30px var(--blue), 0 0 8px var(--blue);
+    position: relative;
+    z-index: 2; 
 }
 h1 {
     font-size: 2em;
@@ -146,6 +149,36 @@ input:checked ~ ul {
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
+#innovation h2, #innovation p, #innovation a {
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+#innovation h2 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 150px;
+}
+#innovation p {
+    color: var(--white);
+    text-align: center;
+    margin-top: -400px;
+}
+#innovation a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    background-color: var(--blue);
+    width:  200px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
 
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
@@ -163,6 +196,8 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     text-align: center;
     padding: 1rem;
     overflow: hidden;
+    position: relative;
+    z-index: 1;
 } 
 
 
