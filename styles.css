@@ -98,14 +98,13 @@ nav ul {
  }
 nav li a {
     float: block;
-    padding: 1rem;
+    padding: 15px 18px;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
     color: var(--blue);
     transition: background-color color .3s ease-in;
 }
-
 nav a:hover, nav input:hover {
     background-color: var(--blue);
     color: var(--black);
@@ -113,7 +112,7 @@ nav a:hover, nav input:hover {
 nav label {
     cursor: pointer;
     display: inline-block;
-    padding: 2rem;
+    padding: 3rem;
     user-select: none;
 }
 label span {
@@ -142,13 +141,11 @@ input {
     display: none;
 }
 input:checked ~ ul {
-    max-height: 900px;
+    max-height: 500px;
 }
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
 }
-
-
 
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
@@ -158,8 +155,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     margin: 0 auto;
 }
 
-/* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) 
- {
+#innovation {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
@@ -168,7 +164,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     padding: 1rem;
     overflow: hidden;
 } 
-*/
+
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 
  {
