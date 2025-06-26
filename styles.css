@@ -64,10 +64,12 @@ table {
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
+html{
+    overflow-x: hidden;
+}
 body {
     min-width: 400px;
     font-family: "Inter";
-    overflow-x: hidden;
 }
 header, footer {
     background-color: var(--black);
@@ -89,13 +91,23 @@ h1 {
     font-size: 2em;
     font-weight: bold;
 }
+h2{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 25px;
+}
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+}
 nav ul {
     width: 100%;
     list-style: none;
     overflow: hidden;
     max-height: 0;
 }
- nav h2 {
+nav h2 {
     visibility: hidden;
     height: 1px;
  }
@@ -107,6 +119,7 @@ nav li a {
     text-decoration: none;
     color: var(--blue);
     transition: background-color color .3s ease-in;
+    line-height: 30px;
 }
 nav a:hover, nav input:hover {
     background-color: var(--blue);
@@ -150,7 +163,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;
 }
 #innovation h2, #innovation p, #innovation a {
-    padding: 20px;
+    padding: 10px;
     backdrop-filter: blur(10px);
 }
 #innovation h2 {
@@ -158,18 +171,22 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     text-align: center;
     font-size: 2em;
     font-weight: bold;
-    margin-top: 150px;
+    margin-top: 125px;
+    padding-left: 45px;
+    padding-right: 45px;
 }
 #innovation p {
     color: var(--white);
     text-align: center;
     margin-top: -400px;
+    line-height: 22px;
+    margin-right: 5px;
 }
 #innovation a {
     text-decoration: none;
     color: var(--white);
     font-weight: bold;
-    padding: 10px;
+    padding: 15px 10px;
     display: block;
     background-color: var(--blue);
     width:  200px;
@@ -178,7 +195,68 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     margin-right: auto;
     margin-top: 10px;
 }
-
+#expertise h2 {
+    margin-top: 15px;
+}
+#expertise p, #results p, #contact p {
+    padding: 5px 10px;
+    line-height: 22px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+#services {
+    margin-bottom: 50px;
+}
+#consulting, #solutions, #business, #transformation, #exclusive, #corporate {
+    display: block;
+    background-color: var(--blue);
+    border-radius: 10px;
+    color: var(--white);
+    padding: 15px 10px;
+    margin: 10px;
+    line-height: 20px;
+}
+#results {
+    background-color: var(--blue);
+    color: var(--white);
+    padding-bottom: 25px;
+}
+#results h2{
+    padding-top: 40px;
+}
+#results h3 {
+    font-size: 1.5em;
+    padding: 10px 25px;
+}
+table {
+    border: 1px solid var(--black);
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+th {
+    font-weight: bold;
+}
+th{
+    background-color: var(--black);
+    border: 1px solid var(--charcoal);
+    vertical-align: middle;
+}
+td{
+    border: 1px solid var(--charcoal);
+    vertical-align: middle;
+}
+tr:nth-child(even) {
+    background-color: var(--black);
+}
+tr:nth-child(odd) {
+    background-color: var(--charcoal);
+}
 
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
