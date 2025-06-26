@@ -1,4 +1,4 @@
-/* CSS BY YOUR Nicole Miller */
+/* CSS BY Nicole Miller */
 
 /* IMPORTED FONTS*/
 /* IMPORT "INTER" FROM GOOGLE FONTS"*/
@@ -86,6 +86,9 @@ header {
     box-shadow: 0 0 4px var(--blue), 0 0 30px var(--blue), 0 0 8px var(--blue);
     position: relative;
     z-index: 2; 
+}
+#logo {
+    padding-left: 25px;
 }
 h1 {
     font-size: 2em;
@@ -340,7 +343,7 @@ form {
 } 
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1*/
-svg {
+#logo {
     content: "";
     position: absolute;
     left:-.5rem;
