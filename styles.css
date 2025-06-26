@@ -82,7 +82,7 @@ header {
     grid-template-columns: 1fr 2fr 1fr;
     gap: 5px;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 0 4px var(--blue), 0 0 30px var(--blue), 0 0 8px var(--blue);
     position: relative;
     z-index: 2; 
@@ -91,6 +91,7 @@ h1 {
     font-size: 2em;
     font-weight: bold;
     padding-left: 45px;
+    padding-bottom: 25px;
 }
 h2 {
     font-size: 2em;
@@ -412,31 +413,74 @@ svg {
 
 /* MEDIA QUERIES (MEDIUM) */ 
 @media screen and (min-width: 800px){
-  
-    #results {
-        grid-template-columns: 1fr 1fr;
-    }
-    .results-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .results-table {
-        width: 50%;
-    }
-    .bar-chart {
-        width: 50%;
-    } 
+ 
     nav ul {
         overflow: visible;
         position: absolute;
         top: 1.5rem;
         left: .5rem;
     }
-    nav li a {
-        display: inline-block;
-    }
    label > span, #menu-toggle input {
         display: none;
     }
+    nav a {
+        float: right;
+        margin-right: 55px;
+    }
+    #services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #services h2 {
+        grid-column: 1/3;
+    }
+    #consulting {
+        grid-column: 1/2;
+    }
+    #consulting, #solutions, #business, #transformation, #exclusive, #corporate {
+        height: 150px;
+    }
+    #results {
+        display: grid;
+        grid-template-columns: 1fr, 1fr;
+        gap: 50px;
+    }
+    #results-info {
+        grid-column: 1/3;
+        width: 50%;
+    }
+    #profits-table {
+        grid-column: 1/2;
+        width: 50%;
+        margin: 15px;
+    }
+}
 
 /* MEDIA QUERIES (LARGE) */
+@media screen and (min-width:1024px) {
+    #services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #services h2 {
+        grid-column: 1/4;
+    }
+    #consulting {
+        grid-column: 1/2;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3px 10px;
+    }
+    #full-name {
+        grid-column: 1/2;
+    }
+    #email {
+        grid-column: 1/3;
+    }
+    #submit{
+        height: 30%;
+        margin-top: 35px;
+    }
+}
